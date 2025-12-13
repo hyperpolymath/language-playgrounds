@@ -1,0 +1,29 @@
+= Language Playgrounds
+
+*Experimentation sandboxes for language and learning*
+
+== Components
+
+|===
+| Repo | Description
+
+| link:me-dialect-playground[me-dialect-playground]
+| Middle English dialect analysis and translation
+
+| link:jtv-playground[jtv-playground]
+| JTV streaming platform experimentation
+
+| link:eclexia-playground[eclexia-playground]
+| Learning and experimentation sandbox
+
+|===
+
+== Quick Start
+
+```bash
+git clone --recursive https://github.com/hyperpolymath/language-playgrounds.git
+```
+
+== License
+
+MIT OR Palimpsest-0.8
