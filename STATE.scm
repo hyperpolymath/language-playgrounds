@@ -12,10 +12,10 @@
 ;;;============================================================================
 
 (define metadata
-  '((version . "0.1.0")
+  '((version . "0.1.1")
     (schema-version . "1.0")
     (created . "2025-12-15")
-    (updated . "2025-12-15")
+    (updated . "2025-12-17")
     (project . "language-playgrounds")
     (repo . "github.com/hyperpolymath/language-playgrounds")))
 
@@ -26,8 +26,8 @@
 (define project-context
   '((name . "language-playgrounds")
     (tagline . "*Experimentation sandboxes for language and learning*")
-    (version . "0.1.0")
-    (license . "AGPL-3.0-or-later")
+    (version . "0.1.1")
+    (license . "MIT OR AGPL-3.0-or-later")
     (rsr-compliance . "gold-target")
 
     (tech-stack
@@ -41,7 +41,7 @@
 
 (define current-position
   '((phase . "v0.1 - Initial Setup and RSR Compliance")
-    (overall-completion . 25)
+    (overall-completion . 30)
 
     (components
      ((rsr-compliance
@@ -151,6 +151,16 @@
 
 (define session-history
   '((snapshots
+     ((date . "2025-12-17")
+      (session . "security-review-and-roadmap")
+      (accomplishments
+       ("Updated actions/checkout SHA pins to v4.2.2 for security"
+        "Fixed ECOSYSTEM.scm indentation"
+        "Corrected license reference in README.adoc"
+        "Verified SCM file syntax and structure"
+        "Updated project roadmap"))
+      (notes . "Security audit session - all workflows now use consistent SHA-pinned actions"))
+
      ((date . "2025-12-15")
       (session . "initial-state-creation")
       (accomplishments
@@ -184,11 +194,11 @@
 
 (define state-summary
   '((project . "language-playgrounds")
-    (version . "0.1.0")
-    (overall-completion . 25)
+    (version . "0.1.1")
+    (overall-completion . 30)
     (next-milestone . "v0.2 - Core Functionality")
     (critical-blockers . 0)
     (high-priority-issues . 0)
-    (updated . "2025-12-15")))
+    (updated . "2025-12-17")))
 
 ;;; End of STATE.scm
