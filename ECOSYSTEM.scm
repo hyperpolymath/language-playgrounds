@@ -18,12 +18,12 @@
 
   (related-projects
     (project
-(name "hyperpolymath-ecosystem")
-(url "https://github.com/hyperpolymath")
-(relationship "ecosystem")
-(description "Part of the hyperpolymath project ecosystem")
-(differentiation
-  "Individual project within a larger cohesive ecosystem"))
+      (name "hyperpolymath-ecosystem")
+      (url "https://github.com/hyperpolymath")
+      (relationship "ecosystem")
+      (description "Part of the hyperpolymath project ecosystem")
+      (differentiation
+        "Individual project within a larger cohesive ecosystem"))
 
     (project
       (name "rhodium-standard-repositories")
