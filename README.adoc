@@ -8,13 +8,16 @@
 | Repo | Description
 
 | link:me-dialect-playground[me-dialect-playground]
-| Middle English dialect analysis and translation
+| Me (an educational ideolect of My) language that grows with you, and AI first class
 
 | link:jtv-playground[jtv-playground]
-| JTV streaming platform experimentation
+| JTV harvard and maths block injection AOPD platform for experimentation
 
 | link:eclexia-playground[eclexia-playground]
-| Learning and experimentation sandbox
+| Learning and experimentation sandbox for Economilcs as Code
+
+| link:ephapax-playground[ephapax-playground]
+| Learning and experimentation sandbox for Physics as Code
 
 |===
 
