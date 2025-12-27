@@ -1,9 +1,9 @@
 [submodule "me-dialect-playground"]
 	path = me-dialect-playground
-	url = git@github.com:hyperpolymath/me-dialect-playground.git
+	url = https://github.com/hyperpolymath/me-dialect-playground.git
 [submodule "jtv-playground"]
 	path = jtv-playground
-	url = git@github.com:hyperpolymath/jtv-playground.git
+	url = https://github.com/hyperpolymath/jtv-playground.git
 [submodule "eclexia-playground"]
 	path = eclexia-playground
-	url = git@github.com:hyperpolymath/eclexia-playground.git
+	url = https://github.com/hyperpolymath/eclexia-playground.git

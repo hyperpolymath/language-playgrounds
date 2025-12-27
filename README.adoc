@@ -2,8 +2,19 @@
 
 *Experimentation sandboxes for language and learning*
 
+== Quick Start
+
+[source,bash]
+----
+git clone --recursive https://github.com/hyperpolymath/language-playgrounds.git
+cd language-playgrounds
+----
+
+NOTE: The `--recursive` flag initializes all submodules. Submodules are pinned to specific commits for reproducibility.
+
 == Components
 
+[cols="2,4"]
 |===
 | Repo | Description
 
@@ -11,21 +22,186 @@
 | Me (an educational ideolect of My) language that grows with you, and AI first class
 
 | link:jtv-playground[jtv-playground]
-| JTV harvard and maths block injection AOPD platform for experimentation
+| JTV Harvard and maths block injection AOPD platform for experimentation
 
 | link:eclexia-playground[eclexia-playground]
-| Learning and experimentation sandbox for Economilcs as Code
+| Learning and experimentation sandbox for Economics as Code
 
-| link:ephapax-playground[ephapax-playground]
+| ephapax-playground _(coming soon)_
 | Learning and experimentation sandbox for Physics as Code
 
 |===
 
-== Quick Start
+== What Works Today
 
-```bash
-git clone --recursive https://github.com/hyperpolymath/language-playgrounds.git
-```
+Status matrix for each playground (updated 2025-12).
+
+=== me-dialect-playground (My Language)
+
+[cols="3,1,4"]
+|===
+| Feature | Status | Notes
+
+| Language specifications (EBNF)
+| ✅
+| 4 complete grammars: Solo, Duet, Ensemble (A/B variants)
+
+| Example programs
+| ✅
+| 110+ examples across all dialects
+
+| Lexer (Rust + logos)
+| ✅
+| Production-ready tokenization
+
+| AST representation
+| ✅
+| Complete syntax tree with serde support
+
+| Documentation
+| ✅
+| Tutorials, specs, research outlines
+
+| Syntax highlighting
+| ✅
+| VSCode, Vim, Emacs
+
+| CI/CD
+| ✅
+| GitHub Actions workflows
+
+| Parser
+| 🚧
+| Recursive descent (stub exists)
+
+| Type checker
+| 🚧
+| Structure exists, needs implementation
+
+| Code generation
+| 🚧
+| LLVM/interpreter backend planned
+
+| Runtime (M:N threading)
+| 🚧
+| Stub exists
+
+| REPL / LSP
+| 🚧
+| Stubs exist
+
+|===
+
+*Clone test*: `cargo check` builds lexer and AST crates
+
+=== jtv-playground (JTV)
+
+[cols="3,1,4"]
+|===
+| Feature | Status | Notes
+
+| Project structure
+| ✅
+| Organized experiments directory
+
+| Documentation
+| ✅
+| README and CONTRIBUTING guides
+
+| Justfile recipes
+| ✅
+| Build automation with `just`
+
+| Guix/Nix packaging
+| ✅
+| guix.scm for reproducible builds
+
+| API demos
+| 🚧
+| REST, GraphQL, WebSocket planned
+
+| Frontend demos
+| 🚧
+| React, Vue, vanilla JS planned
+
+| Database demos
+| 🚧
+| SQLite experiments planned
+
+| Testing frameworks
+| 🚧
+| Jest, pytest, Playwright planned
+
+|===
+
+*Clone test*: `just --list` shows available recipes
+
+=== eclexia-playground (Economics as Code)
+
+[cols="3,1,4"]
+|===
+| Feature | Status | Notes
+
+| RSR-compliant structure
+| ✅
+| ReScript/Deno/Rust stack
+
+| CI/CD configuration
+| ✅
+| GitHub Actions + GitLab CI
+
+| Documentation
+| ✅
+| README, CONTRIBUTING, SECURITY
+
+| Justfile recipes
+| ✅
+| Build automation with `just`
+
+| Guix/Nix packaging
+| ✅
+| guix.scm for reproducible builds
+
+| ReScript setup
+| 🚧
+| bsconfig.json present, needs modules
+
+| Economic models
+| 🚧
+| Domain models planned
+
+| TPCF implementation
+| 🚧
+| Trade policy framework planned
+
+|===
+
+*Clone test*: `just --list` shows available recipes
+
+=== Legend
+
+[horizontal]
+✅:: Complete and working
+🚧:: Work in progress / stub exists
+❌:: Not started
+
+== Submodule Management
+
+[source,bash]
+----
+# Update all submodules to latest pinned commits
+git submodule update --init --recursive
+
+# Check submodule status
+git submodule status
+
+# Update submodule to new commit (maintainers only)
+cd <submodule>
+git checkout <new-commit>
+cd ..
+git add <submodule>
+git commit -m "chore: update <submodule> to <version>"
+----
 
 == License
 
