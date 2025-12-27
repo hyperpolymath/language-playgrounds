@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: MIT OR AGPL-3.0-or-later
+# Mustfile - Deployment contract for language-playgrounds
+# https://github.com/hyperpolymath/mustfile
+
+[project]
+name = "language-playgrounds"
+version = "0.1.0"
+description = "Experimentation sandboxes for language and learning"
+
+[must_have]
+# Required files for this project
+files = [
+    "README.adoc",
+    "LICENSE.txt",
+    ".gitmodules",
+]
+
+[must_not_have]
+# Files that should not exist
+patterns = [
+    "*.ts",           # No TypeScript
+    "node_modules/",  # No npm
+    "package-lock.json",
+    "bun.lockb",
+]
+
+[requirements]
+# Submodules must be initialized
+submodules = ["me-dialect-playground", "jtv-playground", "eclexia-playground"]
+
+[deploy]
+# This is a meta-repository, no deployment needed
+target = "none"
